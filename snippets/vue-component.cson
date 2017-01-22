@@ -1,0 +1,47 @@
+'.text.html.vue':
+  'Component':
+    'prefix': 'component'
+    'body': """
+      <template lang="html">
+        <div class="$1"></div>
+      </template>
+
+      <script>
+        export default {
+          name: '$2',$3
+        }
+      </script>
+
+      <style lang="css">
+      </style>
+    """
+
+'.source.js':
+  'Console log':
+    'prefix': 'log'
+    'body': 'console.log $1'
+  'Data':
+    'prefix': 'dat'
+    'body': """
+      data () {
+        return {
+          $1
+        }
+      },$2
+    """
+  'Methods':
+    'prefix': 'methods'
+    'body': """
+      methods: {
+        $1 () {
+          $2
+        }
+      },$3
+    """
+  'Components':
+    'prefix': 'components'
+    'body': """
+      components: {
+        $1
+      },$2
+    """

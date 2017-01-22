@@ -1,0 +1,24 @@
+{
+  "name": "atom-vue2-snippets",
+  "version": "0.0.1",
+  "description": "Vue.js 2.0+ ES6 snippets for Atom",
+  "keywords": [
+    "vue",
+    "vue.js",
+    "components",
+    "snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuki-torii/atom-vue2-snippets.git"
+  },
+  "author": "limichange<limichange@hotmail.com>",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuki-torii/atom-vue2-snippets/issues"
+  },
+  "homepage": "https://github.com/yuki-torii/atom-vue2-snippets#readme"
+}
