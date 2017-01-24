@@ -17,9 +17,41 @@
     """
 
 '.source.js':
+  'Props':
+    'prefix': 'props'
+    'body': """
+      props: {
+        value: {
+          type: $1,
+          default: $2
+        }
+      },
+    """
+  'Import':
+    'prefix': 'import'
+    'body': """
+      import $1 from '$2'
+      $3
+    """
+  'Then':
+    'prefix': 'then'
+    'body': '.then(($1) => {$2})'
+  'Methods Function':
+    'prefix': 'methodsfunction'
+    'body': """
+      $1 () {
+        $2
+      }
+    """
+  'Const self':
+    'prefix': 'constself'
+    'body': """
+      const self = this
+      $1
+    """
   'Console log':
     'prefix': 'log'
-    'body': 'console.log $1'
+    'body': 'console.log($1)'
   'Data':
     'prefix': 'dat'
     'body': """
